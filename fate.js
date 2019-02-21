@@ -37,7 +37,7 @@ client.on('message', (evt) => {
             author.send(roll(format(arg)));
             break;
         case 'help':
-            channel.send(docs);
+            author.send(docs); // send only to author, because that would get annoying.
             break;
     }
 });

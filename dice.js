@@ -12,7 +12,7 @@ roll = (formattedArg, author = 'You') => {
     let total = 0;
     
     rolls.forEach((val, index) => {
-        if(isD10) {
+        if (isD10) {
             // D10 is a percent die
             rolls[index] = _.random(0, 100);
         } else {
@@ -28,7 +28,7 @@ roll = (formattedArg, author = 'You') => {
         `**Rolls**: [ ${rolls.join(', ')} ]`,
         `**Total**: ${total}`
     ];
-    if(!formattedArg.penalty && !formattedArg.bonus) { 
+    if (!formattedArg.penalty && !formattedArg.bonus) { 
          _.remove(returnMessages, (value, index) => {
                 return index === 1;
             });
