@@ -1,6 +1,14 @@
 # fate
 A dice roller bot for discord! 
 
+### Startup
+Requires NodeJS.
+
+1. clone/download repo
+2. `cd` to directory
+3. `npm install`
+4. `node fate.js` 
+
 ~ let fate decide ~
 
 # Commands
