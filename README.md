@@ -1,5 +1,21 @@
 # fate
-A dice roller bot for discord!
+A dice roller bot for discord! 
+
+~ let fate decide ~
 
 # Commands
-Currently a work in progress. Only supported command is `!test`.
+`!help` : Print the commands.... y'know. This.
+
+`!r [argument]` : Given a dice string, like `3d6`, roll a specified number of dice of a type. No need to include `1` for single die. You can add bonuses or penalties with `-` and `+` after the quantity/type string.
+
+`!gr [argument]` : the same as `!r`, but will be whispered to the author for a "hidden" roll. Typically used for GMs
+
+
+## Examples 
+`!r d20`: roll 1 d20.
+
+`!r 2d20`: roll 2 d20s.
+
+`!r 1d6+2`: roll 1d6, adding a bonus of 2.
+
+And so on.
