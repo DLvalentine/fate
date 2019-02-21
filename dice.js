@@ -13,17 +13,17 @@ roll = formattedArg => {
             // D10 is a percent die
             rolls[index] = _.random(0, 100);
         } else {
-            rolls[index] = _.random(0, formattedArg.type);
+            rolls[index] = _.random(1, formattedArg.type);
         }
     });
 
     total = rolls.reduce((r, v) => r+=v) - formattedArg.penalty + formattedArg.bonus;
 
     let returnMessages = [
-        `You rolled ${formattedArg.quantity}d${formattedArg.type}`,
-        `Your roll had a penalty of ${formattedArg.penalty} and a bonus of ${formattedArg.bonus}`,
-        `Rolls: [${rolls.join(', ')}]`,
-        `Total: ${total}`
+        `You **rolled**: ${formattedArg.quantity}d${formattedArg.type}`,
+        `Your roll had a **penalty** of ${formattedArg.penalty} and a **bonus** of ${formattedArg.bonus}`,
+        `**Rolls**: [${rolls.join(', ')}]`,
+        `**Total**: ${total}`
     ];
     if(!formattedArg.penalty && !formattedArg.bonus) { 
          _.remove(returnMessages, (value, index) => {
@@ -31,7 +31,7 @@ roll = formattedArg => {
             });
     }
 
-    return(returnMessages.join('\n'));
+    return(returnMessages.join('\n\n'));
 };
 
 /**
