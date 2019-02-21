@@ -31,7 +31,7 @@ client.on('message', (evt) => {
 
     switch(cmd) {
         case 'r': 
-            channel.send(roll(format(arg)));
+            channel.send(roll(format(arg), author.username));
             break;
         case 'gr':
             author.send(roll(format(arg)));

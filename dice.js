@@ -1,9 +1,12 @@
 const _ = require('lodash');
 
 /**
- * todo: docs
+ * Roll di(c)e, and return formatted string(s) containing data about the roll(s)
+ * @param formattedArg {Object} - contains information about the dice from the argument string
+ * @param author {String} - the author to highlight when returning the data.
+ * @return {String} - formatted message
  */
-roll = formattedArg => {
+roll = (formattedArg, author = 'You') => {
     const rolls = new Array(formattedArg.quantity).fill(0);
     const isD10 = formattedArg.type === 10;
     let total = 0;
@@ -20,7 +23,7 @@ roll = formattedArg => {
     total = rolls.reduce((r, v) => r+=v) - formattedArg.penalty + formattedArg.bonus;
 
     let returnMessages = [
-        `You **rolled**: ${formattedArg.quantity}d${formattedArg.type}`,
+        `\`${author}\` **rolled**: ${formattedArg.quantity}d${formattedArg.type}`,
         `Your roll had a **penalty** of ${formattedArg.penalty} and a **bonus** of ${formattedArg.bonus}`,
         `**Rolls**: [${rolls.join(', ')}]`,
         `**Total**: ${total}`
@@ -35,8 +38,9 @@ roll = formattedArg => {
 };
 
 /**
- * todo: docs
- * argument type: d20, 2d20. 2d20-10+5 [variants]
+ * Format user input from dice string into object for rolling
+ * @param argument {String} - a dice string formatted with [quantity]d[type][+bonuses or -penalties]
+ * @return {Object} - containing data about the roll
  */
 format = argument => {
     let arg = argument.toLowerCase();
