@@ -1,0 +1,7 @@
+Commands:
+
+`!help` : This message
+
+`!r [argument]` : Examples = `!r d20`: roll 1 d20. `!r 2d20`: roll 2 d20s. `!r 1d6+2`: roll 1d6, adding a bonus of 2. Etc. You can also use `-` for penalties, and both to add penalties and bonuses without having to do math.
+
+`!gr [argument]` : the same as !r, but will be whispered to the author for a "hidden" roll. Typically used for GMs

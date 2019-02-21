@@ -5,6 +5,7 @@
     "main": "fate.js",
     "author": "dlvalentine",
     "dependencies": {
-        "discord.js": "^11.4.2"
+        "discord.js": "^11.4.2",
+        "lodash": "^4.17.11"
     }
 }
