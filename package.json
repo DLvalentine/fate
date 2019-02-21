@@ -5,8 +5,6 @@
     "main": "fate.js",
     "author": "dlvalentine",
     "dependencies": {
-        "discord.io": "^2.5.3",
-        "discord.js": "^11.4.2",
-        "winston": "^3.2.1"
+        "discord.js": "^11.4.2"
     }
 }
