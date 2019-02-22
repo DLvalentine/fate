@@ -25,16 +25,16 @@ client.on('ready', () => {
 
 client.on('message', (evt) => {
     const {content, channel, author} = evt;
-    const msg = content.substring(1).split(' ');
+    const msg = content.substring(1).split(' '); // raw message
     const cmd = msg[0]; // the command sent to the bot
     const arg = msg[1]; // the arguments
 
     switch(cmd) {
         case 'r': 
-            channel.send(roll(format(arg), author.username));
+            try { channel.send(roll(format(arg), author.username)); } catch (e) { channel.send('Them dice ain\'t right. Try again.'); }
             break;
         case 'gr':
-            author.send(roll(format(arg)));
+            try { author.send(roll(format(arg))); } catch (e) { author.send('Them dice ain\'t right. Try again.'); }
             break;
         case 'help':
             author.send(docs); // send only to author, because that would get annoying.
