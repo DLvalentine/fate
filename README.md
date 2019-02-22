@@ -2,7 +2,7 @@
 A dice roller bot for discord! 
 
 ### Startup
-Requires NodeJS.
+Requires [NodeJS](https://nodejs.org/).
 
 1. clone/download repo
 2. `cd` to directory
