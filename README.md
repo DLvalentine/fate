@@ -13,7 +13,7 @@ Be sure to open `auth.json` and include the secret token that Discord will use t
 3. `npm install`
 4. `node fate.js` 
 
-* 2.5 See above note for updating `auth.json` and (optionally) `channels.json`
+\* 2.5 See above note for updating `auth.json` and (optionally) `channels.json`
 
 ~ let fate decide ~
 
