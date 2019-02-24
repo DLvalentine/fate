@@ -1,14 +1,12 @@
-const Discord = require('discord.js');
-const auth = require('./auth.json');
-const channelList = require('./channels.json');
-const fs = require('fs');
-const {roll, format} = require('./dice.js');
-
 require.extensions['.txt'] = (module, filename) => {
     module.exports = fs.readFileSync(filename, 'utf8');
 };
-
+const auth = require('./auth.json');
+const channelList = require('./channels.json');
+const Discord = require('discord.js');
 const docs = require('./botDocs.txt');
+const fs = require('fs');
+const {roll, format} = require('./dice.js');
 
 
 // ************ CLIENT ******************* //
