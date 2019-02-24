@@ -4,6 +4,8 @@ A dice roller bot for discord!
 ### Startup
 Requires [NodeJS](https://nodejs.org/).
 
+This assumes you've allowed the bot access to your server (WIP, shareable link?), and have properly setup `auth.json` (WIP)
+
 1. clone/download repo
 2. `cd` to directory
 3. `npm install`
