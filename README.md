@@ -10,6 +10,7 @@ Be sure to open `auth.json` and include the secret token that Discord will use t
 
 1. clone/download repo
 2. `cd` to directory
+2.5 See above note for updating `auth.json` and (optionally) `channels.json`
 3. `npm install`
 4. `node fate.js` 
 
