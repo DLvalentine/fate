@@ -9,10 +9,11 @@ This assumes you've allowed the bot access to your server. (WIP) - Not sure at t
 Be sure to open `auth.json` and include the secret token that Discord will use to login as that bot. You can also include specific channels on your server in `channels.json` to be able to send messages strictly to a specificed channel.
 
 1. clone/download repo
-2. `cd` to directory
-2.5 See above note for updating `auth.json` and (optionally) `channels.json`
+2. `cd` to directory*
 3. `npm install`
 4. `node fate.js` 
+
+* 2.5 See above note for updating `auth.json` and (optionally) `channels.json`
 
 ~ let fate decide ~
 
