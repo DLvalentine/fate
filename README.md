@@ -4,7 +4,9 @@ A dice roller bot for discord!
 ### Startup
 Requires [NodeJS](https://nodejs.org/).
 
-This assumes you've allowed the bot access to your server. (WIP) - Not sure at the moment whether you'd need to make your own instance or if you can inherit the rules I have... I run this but locally, since I only use it biweekly during my own D&D/Pathfinder sessions.
+This assumes you've allowed the bot access to your server. [Click here to do that.](https://discordapp.com/api/oauth2/authorize?client_id=548192715129749544&permissions=7168&scope=bot)
+
+I don't plan to run this remotely, since I only use it when I'm running D&D or Pathfinder sessions. So as long as the bot has perms, you should be able to spin up a local instance.
 
 Be sure to open `auth.json` and include the secret token that Discord will use to login as that bot. You can also include specific channels on your server in `channels.json` to be able to send messages strictly to a specificed channel.
 
