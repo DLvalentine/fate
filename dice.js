@@ -25,7 +25,7 @@ roll = (formattedArg, author = 'You') => {
 
     let returnMessages = [
         `\`${author}\` **rolled**: ${formattedArg.quantity}d${formattedArg.type}`,
-        `Your roll had a **penalty** of ${formattedArg.penalty} and a **bonus** of ${formattedArg.bonus}`,
+        `Your roll had a **penalty** of ${formattedArg.penalty}\nYour roll had a **bonus** of ${formattedArg.bonus}`,
         `**Rolls**: [ ${rolls.join(', ')} ] ${formattedArg.penalty ? `- ${formattedArg.penalty}` : ''} ${formattedArg.bonus ? `+ ${formattedArg.bonus}` : ''}`,
         `**Total**: ${total}`
     ];
