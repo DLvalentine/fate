@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const {eval} = require('mathjs'); // fixme: figure out how to stack bonuses and penalties
 
 /**
  * Roll di(c)e, and return formatted string(s) containing data about the roll(s)
@@ -43,7 +44,7 @@ roll = (formattedArg, author = 'You') => {
  * @return {Object} - containing data about the roll
  */
 format = argument => {
-    let arg = argument.toLowerCase();
+    let arg = argument.toLowerCase().replace(/\s/g, ''); // Just ensure that whitespace is replaced, since it is cheap.
     if ( arg[0] === 'd' ) arg = '1' + arg; // to make life easier, prepend 1 when no quantity provided
     let splitArgs = arg.split('d');
 

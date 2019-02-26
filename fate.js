@@ -8,6 +8,7 @@ const channelList = require('./channels.json');
 const Discord = require('discord.js');
 const docs = require('./botDocs.txt');
 const {roll, format} = require('./dice.js');
+const _ = require('lodash');
 
 
 // ************ CLIENT ******************* //
@@ -26,7 +27,10 @@ client.on('message', (evt) => {
     const {content, channel, author} = evt;
     const msg = content.substring(1).split(' '); // raw message
     const cmd = msg[0]; // the command sent to the bot
-    const arg = msg[1]; // the arguments
+    _.remove(msg, (value, index) => {
+        return index === 0;
+    });    
+    const arg = msg.join(''); // Util more arguments are accepted, combine it into one string.
 
     switch(cmd) {
         case 'r': 
