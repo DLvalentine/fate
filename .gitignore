@@ -1,6 +1,3 @@
-./auth.json
-./channels.json
-
 # Logs
 logs
 *.log
