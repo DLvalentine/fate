@@ -26,6 +26,7 @@ Be sure to open `auth.json` and include the secret token that Discord will use t
 
 `!gr [argument]` : the same as `!r`, but will be whispered to the author for a "hidden" roll. Typically used for GMs
 
+`!srd` : Posts a link to the online SRD for Pathfinder.
 
 ## Examples 
 `!r d20`: roll 1 d20.
