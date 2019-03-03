@@ -39,6 +39,9 @@ client.on('message', (evt) => {
         case 'gr':
             try { author.send(roll(format(arg))); } catch (e) { author.send('Them dice ain\'t right. Try again.'); }
             break;
+        case 'srd':
+            channel.send('[Pathfinder SRD](https://www.aonprd.com)');
+            break;
         case 'help':
             author.send(docs); // send only to author, because that would get annoying.
             break;
