@@ -1,3 +1,6 @@
+# I personally hate copy/pasting my own auth into auth.json... and duh, don't want to commit it
+# Since it is checked in as a template file, to ensure you use it, I use authbackup as a means to store my auth key on the 
+# hardware I run fate on.
 authbackup.json
 
 # Logs
