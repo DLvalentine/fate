@@ -9,7 +9,7 @@ I run this on a little raspberry pi out of my basement... so... if there's a ton
 ### So you forked it? Now what?
 You can create an app/bot via [Discord for Developers](https://discordapp.com/developers/applications/)
 
-fate requires [NodeJS](https://nodejs.org/) to run, as it was imlpemented in JS.
+fate (or, I guess your new fork) requires [NodeJS](https://nodejs.org/) to run, as it was imlpemented in JS.
 
 Be sure to open `auth.json` and include the secret token that Discord will use to login as that bot. You can also include specific channels on your server in `channels.json` to be able to send messages strictly to a specificed channel.
 
@@ -20,7 +20,12 @@ Be sure to open `auth.json` and include the secret token that Discord will use t
 
 \* 2.5 See above note for updating `auth.json` and (optionally) `channels.json`
 
-~ let fate decide ~
+~ let fate (or your fork!) decide ~
+
+# Contributing
+Seeing as you'd need to create your own app/bot to make changes, feel free to re-release this as your own flavor of a dice roller. They're a dime a dozen, anyway. MIT license, so just gimmie a shoutout and I'm happy. 
+
+But if you'd like to improve this project, make a PR :) I'm happy to accept changes.
 
 # Commands
 `!help` : Print the commands.... y'know. This.
