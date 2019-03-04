@@ -44,3 +44,7 @@ But if you'd like to improve this project, make a PR :) I'm happy to accept chan
 `!r 1d6+2`: roll 1d6, adding a bonus of 2.
 
 And so on. It works similar to the Roll20 Dice Roll system.
+
+Depending on your argument, it will return the expected messages, complete with a reference to who rolled!
+
+![example output](https://raw.githubusercontent.com/DLvalentine/fate/master/example.JPG)
