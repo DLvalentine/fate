@@ -6,6 +6,8 @@ A dice roller bot for discord!
 
 I run this on a little raspberry pi out of my basement... so... if there's a ton of traffic I imagine it won't be pretty. Maybe one day I'll move it to AWS or something.
 
+> EDIT: Wouldn't you know it? The Pi finally died. So fate is offline for now.
+
 ### So you forked it? Now what?
 You can create an app/bot via [Discord for Developers](https://discordapp.com/developers/applications/)
 
