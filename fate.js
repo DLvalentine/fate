@@ -25,12 +25,15 @@ client.on('ready', () => {
 
 client.on('message', (evt) => {
     const {content, channel, author} = evt;
-    const msg = content.substring(1).split(' '); // raw message
-    const cmd = msg[0]; // the command sent to the bot
-    _.remove(msg, (value, index) => {
-        return index === 0;
-    });    
-    const arg = msg.join(''); // Util more arguments are accepted, combine it into one string.
+
+    //construct cmd from user input, handle edge cases.
+    let cmd = (content.match(/\!.*\s?/) || '!__NO-COMMAND');
+    if (typeof cmd !== 'string') cmd = cmd[0];
+    if (cmd === undefined || cmd === null) cmd = '!__NO-COMMAND';
+
+    // prepare user's cmd and args to compute
+    cmd = cmd.replace('!', '').trim();
+    const arg = content.split(' ')[1]; // the command sent to the bot
 
     switch(cmd) {
         case 'r': 
@@ -42,7 +45,7 @@ client.on('message', (evt) => {
         case 'srd':
             channel.send('[Pathfinder SRD](https://www.aonprd.com)');
             break;
-        case 'help':
+        case 'fate':
             author.send(docs); // send only to author, because that would get annoying.
             break;
     }
