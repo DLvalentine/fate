@@ -27,12 +27,11 @@ client.on('message', (evt) => {
     const {content, channel, author} = evt;
 
     //construct cmd from user input, handle edge cases.
-    let cmd = (content.match(/\!.*\s?/) || '!__NO-COMMAND');
-    if (typeof cmd !== 'string') cmd = cmd[0];
-    if (cmd === undefined || cmd === null) cmd = '!__NO-COMMAND';
+    let cmd = (content.match(/\!.*\s?/) || 'fate__INVALID');
+    if (typeof cmd !== 'string') cmd = cmd[0].split(' ')[0].substring(1).trim();
+    if (cmd === undefined || cmd === null) cmd = 'fate__INVALID';
 
     // prepare user's cmd and args to compute
-    cmd = cmd.replace('!', '').trim();
     const arg = content.split(' ')[1]; // the command sent to the bot
 
     switch(cmd) {
