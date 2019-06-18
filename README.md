@@ -38,6 +38,8 @@ But if you'd like to improve this project, make a PR :) I'm happy to accept chan
 
 `!e [argument]` : Sends a formatted "ENCOUNTER" text block to the log, in order to help break up text between encounters in your server
 
+`!g [argument]` : The same as `!e` , but for "GRANTED" - as in, granting items or experience
+
 ## Examples 
 `!r d20`: roll 1 d20.
 

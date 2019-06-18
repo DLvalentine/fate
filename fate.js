@@ -44,6 +44,9 @@ client.on('message', (evt) => {
 	case 'e':
             channel.send(`\`\`\`diff\n- ENCOUNTER${arg? ': ' + content.replace('!e ', '').toUpperCase().trim() : ''} - \`\`\``);
 	    break;
+	case 'g':
+            channel.send(`\`\`\`diff\n+ GRANTED${arg? ': ' + content.replace('!g ', '').toUpperCase().trim() : ''} + \`\`\``);
+	    break;
         case 'srd':
             channel.send('[Pathfinder SRD](https://www.aonprd.com)');
             break;
