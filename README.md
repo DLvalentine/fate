@@ -30,13 +30,15 @@ Seeing as you'd need to create your own app/bot to make changes, feel free to re
 But if you'd like to improve this project, make a PR :) I'm happy to accept changes.
 
 # Commands
-`!help` : Print the commands.... y'know. This.
+`!fate` : Print the commands.... y'know. This.
 
 `!r [argument]` : Given a dice string, like `3d6`, roll a specified number of dice of a type. No need to include `1` for single die. You can add bonuses or penalties with `-` and `+` after the quantity/type string.
 
 `!gr [argument]` : the same as `!r`, but will be whispered to the author for a "hidden" roll. Typically used for GMs
 
 `!srd` : Posts a link to the online SRD for Pathfinder.... maybe one day configurable to go to other SRDs
+
+`!e [argument]` : Sends a formatted "ENCOUNTER" text block to the log, in order to help break up text between encounters in your server
 
 ## Examples 
 `!r d20`: roll 1 d20.

@@ -15,7 +15,8 @@ roll = (formattedArg, author = 'You') => {
     rolls.forEach((val, index) => {
         if (isD10) {
             // D10 is a percent die
-            rolls[index] = _.random(0, 10);
+	    // TODO: remove this... it isn't really needed anymore
+            rolls[index] = _.random(1, 10);
         } else {
             rolls[index] = _.random(1, formattedArg.type);
         }
