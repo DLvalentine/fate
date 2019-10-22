@@ -4,12 +4,14 @@ A dice roller bot for discord!
 ### Adding fate to your Discord Server
 [Click here to do that.](https://discordapp.com/api/oauth2/authorize?client_id=548192715129749544&permissions=7168&scope=bot)
 
+`NOTE`: My pi running Fate died a while back, so consider the above link dead for now. I'll probably spin it back up soon™
+
 I run this on a little raspberry pi out of my basement... so... if there's a ton of traffic I imagine it won't be pretty. Maybe one day I'll move it to AWS or something.
 
 ### So you forked it? Now what?
 You can create an app/bot via [Discord for Developers](https://discordapp.com/developers/applications/)
 
-fate (or, I guess your new fork) requires [NodeJS](https://nodejs.org/) to run, as it was imlpemented in JS.
+fate (or, I guess your new fork) requires [NodeJS](https://nodejs.org/) to run. All other dependences can be installed via npm once you have NodeJS installed.
 
 Be sure to open `auth.json` and include the secret token that Discord will use to login as that bot. You can also include specific channels on your server in `channels.json` to be able to send messages strictly to a specificed channel.
 
