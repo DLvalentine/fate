@@ -6,7 +6,7 @@
     "author": "dlvalentine",
     "dependencies": {
         "discord.js": "^11.4.2",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.13",
         "mathjs": "^5.5.0"
     }
 }
