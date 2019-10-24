@@ -7,6 +7,7 @@ const auth = require('./auth.json');
 const channelList = require('./channels.json');
 const Discord = require('discord.js');
 const docs = require('./botDocs.txt');
+const motd = require('./motd.txt');
 const {roll, format} = require('./dice.js');
 const _ = require('lodash');
 
@@ -41,17 +42,20 @@ client.on('message', (evt) => {
         case 'gr':
             try { author.send(roll(format(arg))); } catch (e) { author.send('Them dice ain\'t right. Try again.'); }
             break;
-	case 'e':
-            channel.send(`\`\`\`diff\n- ENCOUNTER${arg? ': ' + content.replace('!e ', '').toUpperCase().trim() : ''} - \`\`\``);
-	    break;
-	case 'g':
-            channel.send(`\`\`\`diff\n+ GRANTED${arg? ': ' + content.replace('!g ', '').toUpperCase().trim() : ''} + \`\`\``);
-	    break;
+        case 'e':
+                channel.send(`\`\`\`diff\n- ENCOUNTER${arg? ': ' + content.replace('!e ', '').toUpperCase().trim() : ''} - \`\`\``);
+            break;
+        case 'g':
+                channel.send(`\`\`\`diff\n+ GRANTED${arg? ': ' + content.replace('!g ', '').toUpperCase().trim() : ''} + \`\`\``);
+            break;
         case 'srd':
             channel.send('[Pathfinder SRD](https://www.aonprd.com)');
             break;
         case 'fate':
             author.send(docs); // send only to author, because that would get annoying.
+            break;
+        case 'motd':
+            channel.send(motd);
             break;
     }
 });
