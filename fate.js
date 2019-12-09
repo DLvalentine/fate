@@ -22,6 +22,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('> Fate has entered the chat.');
+    channel.send(motd);
 });
 
 client.on('message', (evt) => {

@@ -13,6 +13,8 @@
 
 `!g [argument]` : The same as `!e` , but for "GRANTED" - as in, granting items or experience
 
+`!motd` : Will repeat the Message of the Day, as configured in `motd.txt`
+
 ## Examples 
 `!r d20`: roll 1 d20.
 

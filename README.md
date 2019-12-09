@@ -4,9 +4,9 @@ A dice roller bot for discord!
 ### Adding fate to your Discord Server
 [Click here to do that.](https://discordapp.com/api/oauth2/authorize?client_id=548192715129749544&permissions=7168&scope=bot)
 
-`NOTE`: My pi running Fate died a while back, so consider the above link dead for now. I'll probably spin it back up soon™
-
 I run this on a little raspberry pi out of my basement... so... if there's a ton of traffic I imagine it won't be pretty. Maybe one day I'll move it to AWS or something.
+
+`NOTE`: My pi running Fate died a while back, so consider the above link dead for now. I'll probably spin it back up soon™
 
 ### So you forked it? Now what?
 You can create an app/bot via [Discord for Developers](https://discordapp.com/developers/applications/)
@@ -41,6 +41,8 @@ But if you'd like to improve this project, make a PR :) I'm happy to accept chan
 `!e [argument]` : Sends a formatted "ENCOUNTER" text block to the log, in order to help break up text between encounters in your server
 
 `!g [argument]` : The same as `!e` , but for "GRANTED" - as in, granting items or experience
+
+`!motd` : Will repeat the Message of the Day, as configured in `motd.txt`
 
 ## Examples 
 `!r d20`: roll 1 d20.
